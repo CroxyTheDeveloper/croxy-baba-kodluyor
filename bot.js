@@ -57,7 +57,7 @@ bot.on('ready', async () => { //Bot aktif olduğunda,
   console.log(`BOT: ${bot.user.username} aktif! Croxy#9873 tarafindan bu bot yapilmistir.`) //Botumuzun aktif olduğunu konsola gönderiyoruz. Ve reklamımı yapıyorum :)
   console.log(`BOT: ${bot.guilds.size} sunucuya ve ${bot.users.size} kullanıcıya hizmet veriyorum.`) //Botumuzun hizmet ettiği sunucu ve kullanıcı sayısını gönderiyoruz.
   bot.user.setActivity(`${prefix}yardım | ${prefix}avatar | ${bot.guilds.size} sunucu`) //Bot için önemli komutları tanıtıyoruz ve, kaç sunucuda olduğunu yazıyoruz.
-}); //Komudu bitiriyoruz.
+}); //Komudu bitiriyoruz
 
 bot.login(ayarlar.token) //ayarlar.json daki, "token": "tokeniniz" olan yerdeki, tokeniniz olan yere botunuzun tokenini yapıştıracaksınız.
 
