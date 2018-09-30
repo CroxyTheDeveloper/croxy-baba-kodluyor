@@ -1,0 +1,19 @@
+const Discord = require('discord.js')
+
+module.exports.run = async (client, message, args, color) => {
+  let start = Date.now();
+    let diff = (Date.now() - start); 
+    let API = (client.ping).toFixed(2)
+        
+        let embed = new Discord.RichEmbed()
+        .setTitle(`🔔 Pong!`)
+        .setColor(0xff2f2f)
+        .addField("📶 Benim Pingim", `${diff}ms`, true)
+        .addField("💻 API\'nin Pingi", `${API}ms`, true)
+        message.channel.send(embed);
+      
+    };
+
+module.exports.help = {
+    name: 'ping'
+}
